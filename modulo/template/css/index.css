@@ -1,0 +1,99 @@
+/* ---------------------------------------- */
+/* Restablecimiento CSS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Distribucion Grid */
+body{
+  background-color: #212121;
+  /*Grid*/
+  display: grid;
+  grid-template-rows: 160px 1fr 50px;
+  min-height: 100vh;
+}
+/* ---------------------------------------- */
+/* Grid header */
+.grid_header{
+  background-color: #c0392b;
+  display: grid;
+  grid-template: "grid_logo grid_menu grid_menu grid_menu";
+  .grid_logo{
+    grid-area: grid_logo;
+    /*flexbox*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid_menu, .items{
+    grid-area: grid_menu;
+    /*flexbox*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* ---------------------------------------- */
+/* menu */
+ul, li {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* ---------------------------------------- */
+/* Flex main */
+.flex_main{
+  background-color: #212121;
+  color: #FFFFFF;
+  width: 90%;
+  margin: 0 auto;
+  /*flexbox*/
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_section{
+  /*flexbox*/
+  display: flex;
+  justify-content: center;
+}
+
+.flex_titulo{
+  height: 60px;
+  /*flexbox*/
+  display: flex;
+  align-items: center;
+}
+
+.flex_subtitulo{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article{
+  background-color: #2f2f2f;
+  border-radius: 15px;
+  margin: 20px 20px;
+}
+/* ---------------------------------------- */
+/* Flex footer */
+footer{
+  background-color: #c0392b;
+  color: #FFFFFF;
+  /*flexbox*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
