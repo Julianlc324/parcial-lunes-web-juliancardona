@@ -13,7 +13,7 @@ const cargarPokemonInicial = async () => {
     etiquetaClase[0].innerHTML = `
       <figure>
         <img src=/assets/img/pokemon/${dato.id}.png alt=${dato.name}>
-        <figcaption class=flex_subtitulo> ${dato.name} </figcaption>
+        <h3 class=flex_subtitulo> ${dato.name} </h3>
       </figure>
     `
     contadorEtiqueta++

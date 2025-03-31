@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Poke API </title>
+    <!-- Css -->
+    <link rel="stylesheet" href="/modulo/template/css/index.css">
+  </head>
+  <body>
+    <header class="grid_header">
+      <!-- Logo-->
+      <div class="grid_logo">
+        <img src="/assets/img/logo/pokeapi.png" alt="logo">
+      </div>
+      <!-- Menu -->
+      <nav class="grid_menu">
+        <ul class="items">
+          <li> 
+            <a href="/../../index.html"> Inicio </a> 
+          </li>
+          <li> 
+            <a href="/modulo/pokepagina1/generacion1.html"> 1° Generación </a> 
+          </li>
+          <li> 
+            <a href="/modulo/pokepagina2/generacion2.html"> 2° Generación </a> 
+          </li>
+          <li> 
+            <a href="/modulo/pokepagina3/generacion3.html"> 3° Generación </a> 
+          </li>
+        </ul>
+       </nav>
+    </header>
+    <main class="flex_main">
+			<!-- Buscador -->
+			<h1 class="flex_titulo"> Busca tu pokémon </h1>
+			<section class="flex_buscador">
+				<div class="cajon_buscar">
+					<input type="text" name="busca_pokemon" id="busca_pokemon" placeholder="Digita el Nº del pokémon">
+					<button id="button_search" onclick="obtenerPokemon()"> Buscar </button>
+				</div>
+				<article class="article_buscar"> </article>
+			</section>
+		
+      <!-- Pokemom 1º generacion -->
+      <!-- Fila 1-->
+      <h1 class="flex_titulo"> Listado de pokémon </h1>
+      <section class="flex_section"> 
+        <article class="article1"> </article>
+        <article class="article2"> </article>
+        <article class="article3"> </article>
+        <article class="article4"> </article>
+      </section>
+			<!-- Fila 2 -->
+      <section class="flex_section"> 
+        <article class="article5"> </article>
+        <article class="article6"> </article>
+        <article class="article7"> </article>
+        <article class="article8"> </article>
+      </section>
+			<!-- Fila 3 -->
+      <section class="flex_section"> 
+        <article class="article9"> </article>
+        <article class="article10"> </article>
+        <article class="article11"> </article>
+        <article class="article12"> </article>
+      </section>
+			<!-- Fila 4 -->
+      <section class="flex_section"> 
+        <article class="article13"> </article>
+        <article class="article14"> </article>
+        <article class="article15"> </article>
+        <article class="article16"> </article>
+      </section>
+			<!-- Fila 5 -->
+      <section class="flex_section"> 
+        <article class="article17"> </article>
+        <article class="article18"> </article>
+        <article class="article19"> </article>
+        <article class="article20"> </article>
+      </section>
+			<!-- Fila 6 -->
+			<section class="flex_section"> 
+				<article class="article21"> </article>
+				<article class="article22"> </article>
+				<article class="article23"> </article>
+				<article class="article24"> </article>
+			</section>
+			<!-- Fila 7 -->
+			<section class="flex_section"> 
+				<article class="article25"> </article>
+				<article class="article26"> </article>
+				<article class="article27"> </article>
+				<article class="article28"> </article>
+			</section>
+			<!-- Fila 8 -->
+			<section class="flex_section"> 
+				<article class="article29"> </article>
+				<article class="article30"> </article>
+				<article class="article31"> </article>
+				<article class="article32"> </article>
+			</section>
+			<!-- Fila 9 -->
+			<section class="flex_section"> 
+				<article class="article33"> </article>
+				<article class="article34"> </article>
+				<article class="article35"> </article>
+				<article class="article36"> </article>
+			</section>
+			<!-- Fila 10 -->
+			<section class="flex_section"> 
+				<article class="article37"> </article>
+				<article class="article38"> </article>
+				<article class="article39"> </article>
+				<article class="article40"> </article>
+			</section>
+			<!-- Fila 11 -->
+			<section class="flex_section"> 
+				<article class="article41"> </article>
+				<article class="article42"> </article>
+				<article class="article43"> </article>
+				<article class="article44"> </article>
+			</section>
+			<!-- Fila 12 -->
+			<section class="flex_section"> 	
+				<article class="article45"> </article>
+				<article class="article46"> </article>
+				<article class="article47"> </article>
+				<article class="article48"> </article>
+			</section>
+			<!-- Fila 13 -->
+			<section class="flex_section"> 	
+				<article class="article49"> </article>
+				<article class="article50"> </article>
+				<article class="article51"> </article>
+				<article class="article52"> </article>
+			</section>
+			<!-- Fila 14 -->
+			<section class="flex_section"> 	
+				<article class="article53"> </article>
+				<article class="article54"> </article>
+				<article class="article55"> </article>
+				<article class="article56"> </article>
+			</section>
+			<!-- Fila 15 -->
+			<section class="flex_section"> 	
+				<article class="article57"> </article>
+				<article class="article58"> </article>
+				<article class="article59"> </article>
+				<article class="article60"> </article>
+			</section>
+			<!-- Fila 16 -->
+			<section class="flex_section"> 	
+				<article class="article61"> </article>
+				<article class="article62"> </article>
+				<article class="article63"> </article>
+				<article class="article64"> </article>
+			</section>
+			<!-- Fila 17 -->
+			<section class="flex_section"> 	
+				<article class="article65"> </article>
+				<article class="article66"> </article>
+				<article class="article67"> </article>
+				<article class="article68"> </article>
+			</section>
+			<!-- Fila 18 -->
+			<section class="flex_section"> 	
+				<article class="article69"> </article>
+				<article class="article70"> </article>
+				<article class="article71"> </article>
+				<article class="article72"> </article>
+			</section>
+			<!-- Fila 19 -->
+			<section class="flex_section"> 	
+				<article class="article73"> </article>
+				<article class="article74"> </article>
+				<article class="article75"> </article>
+				<article class="article76"> </article>
+			</section>
+			<!-- Fila 20 -->
+			<section class="flex_section"> 	
+				<article class="article77"> </article>
+				<article class="article78"> </article>
+				<article class="article79"> </article>
+				<article class="article80"> </article>
+			</section>
+			<!-- Fila 21 -->
+			<section class="flex_section"> 	
+				<article class="article81"> </article>
+				<article class="article82"> </article>
+				<article class="article83"> </article>
+				<article class="article84"> </article>
+			</section>
+			<!-- Fila 22 -->
+			<section class="flex_section"> 	
+				<article class="article85"> </article>
+				<article class="article86"> </article>
+				<article class="article87"> </article>
+				<article class="article88"> </article>
+			</section>
+			<!-- Fila 23 -->
+			<section class="flex_section"> 	
+				<article class="article89"> </article>
+				<article class="article90"> </article>
+				<article class="article91"> </article>
+				<article class="article92"> </article>
+			</section>
+			<!-- Fila 24 -->
+			<section class="flex_section"> 	
+				<article class="article93"> </article>
+				<article class="article94"> </article>
+				<article class="article95"> </article>
+				<article class="article96"> </article>
+			</section>
+			<!-- Fila 25 -->
+			<section class="flex_section"> 	
+				<article class="article97"> </article>
+				<article class="article98"> </article>
+				<article class="article99"> </article>
+				<article class="article100"> </article>
+			</section>
+			<!-- Fila 26 -->
+			<section class="flex_section"> 	
+				<article class="article101"> </article>
+				<article class="article102"> </article>
+				<article class="article103"> </article>
+				<article class="article104"> </article>
+			</section>
+			<!-- Fila 27 -->
+			<section class="flex_section"> 	
+				<article class="article105"> </article>
+				<article class="article106"> </article>
+				<article class="article107"> </article>
+				<article class="article108"> </article>
+			</section>
+			<!-- Fila 28 -->
+			<section class="flex_section"> 	
+				<article class="article109"> </article>
+				<article class="article110"> </article>
+				<article class="article111"> </article>
+				<article class="article112"> </article>
+			</section>
+			<!-- Fila 29 -->
+			<section class="flex_section"> 	
+				<article class="article113"> </article>
+				<article class="article114"> </article>
+				<article class="article115"> </article>
+				<article class="article116"> </article>
+			</section>
+			<!-- Fila 30 -->
+			<section class="flex_section"> 	
+				<article class="article117"> </article>
+				<article class="article118"> </article>
+				<article class="article119"> </article>
+				<article class="article120"> </article>
+			</section>
+			<!-- Fila 31 -->
+			<section class="flex_section"> 	
+				<article class="article121"> </article>
+				<article class="article122"> </article>
+				<article class="article123"> </article>
+				<article class="article124"> </article>
+			</section>
+			<!-- Fila 32 -->
+			<section class="flex_section"> 	
+				<article class="article125"> </article>
+				<article class="article126"> </article>
+				<article class="article127"> </article>
+				<article class="article128"> </article>
+			</section>
+			<!-- Fila 33 -->
+			<section class="flex_section"> 	
+				<article class="article129"> </article>
+				<article class="article130"> </article>
+				<article class="article131"> </article>
+				<article class="article132"> </article>
+			</section>
+			<!-- Fila 34 -->
+			<section class="flex_section"> 	
+				<article class="article133"> </article>
+				<article class="article134"> </article>
+				<article class="article135"> </article>
+				<article class="article136"> </article>
+			</section>
+			<!-- Fila 35 -->
+			<section class="flex_section"> 	
+				<article class="article137"> </article>
+				<article class="article138"> </article>
+				<article class="article139"> </article>
+				<article class="article140"> </article>
+			</section>
+			<!-- Fila 36 -->
+			<section class="flex_section"> 	
+				<article class="article141"> </article>
+				<article class="article142"> </article>
+				<article class="article143"> </article>
+				<article class="article144"> </article>
+			</section>
+			<!-- Fila 37 -->
+			<section class="flex_section"> 	
+				<article class="article145"> </article>
+				<article class="article146"> </article>
+				<article class="article147"> </article>
+				<article class="article148"> </article>
+			</section>
+			<!-- Fila 38 -->
+			<section class="flex_section"> 	
+				<article class="article149"> </article>
+				<article class="article150"> </article>
+				<article class="article151"> </article>
+			</section>
+    </main>
+    <footer> Julian Londoño Cardona - 2025 </footer>
+    <!-- Js -->
+     <script src="/modulo/pokepagina1/js/generacion1.js"></script>
+  </body>
+</html>
